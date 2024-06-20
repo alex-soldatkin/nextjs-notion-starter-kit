@@ -68,7 +68,7 @@ export default siteConfig({
     {
       'title': 'FAQ', 
       'pageId': '94cb462d8f874103ab629d9255600465'
-    }
+    },
 
     {
       'title': 'Schedule', 
