@@ -2,24 +2,24 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '7875426197cf461698809def95960ebf',
+  rootNotionPageId: '14c3d61dc6b9469b8092ac2b317c9780',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'Travis Fischer',
+  name: 'circle.institute',
+  domain: 'circle.institute',
+  author: 'Alex Soldatkin',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: 'circle: a well-rounded education',
 
   // social usernames (optional)
-  twitter: 'transitive_bs',
-  github: 'transitive-bullshit',
-  linkedin: 'fisch2',
+  // twitter: 'transitive_bs',
+  // github: 'transitive-bullshit',
+  linkedin: 'alexsoldatkin',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
@@ -50,16 +50,29 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
-  navigationStyle: 'default'
-  // navigationStyle: 'custom',
-  // navigationLinks: [
-  //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-  //   },
-  //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-  //   }
-  // ]
+  // navigationStyle: 'default'
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: 'About',
+      pageId: '14c3d61dc6b9469b8092ac2b317c9780?pvs=4#33cf69c4f62445209cf7a1a545cb9569'
+    },
+    { title: 'Courses',
+    pageId: '6a6f44d67e0240c69ac0adfa6c483120'
+    }, 
+
+    {
+      title: 'Curriculum', 
+      pageId: '9f3e402932a344eeaafc660eeeff4711'
+    }, 
+    {
+      'title': 'FAQ', 
+      'pageId': '94cb462d8f874103ab629d9255600465'
+    }
+
+    {
+      'title': 'Schedule', 
+      'pageId': '4f5a9b8c059243c7a259bea893918a5a'
+    }
+  ]
 })
