@@ -18,15 +18,16 @@ export default siteConfig({
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
-  // github: 'transitive-bullshit',
+  github: 'alex-soldatkin',
   linkedin: 'alexsoldatkin',
-  // mastodon: '#', // optional mastodon profile URL, provides link verification
+  // mastodon: 'circl.institute', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
-  // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  youtube: 'circle.institute', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  instagram: 'circle.institute', // optional instagram username
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
-  defaultPageIcon: null,
+  defaultPageIcon: './public/favicon.ico',
   defaultPageCover: null,
   defaultPageCoverPosition: 0.5,
 
@@ -57,22 +58,23 @@ export default siteConfig({
       title: 'About',
       pageId: '14c3d61dc6b9469b8092ac2b317c9780?pvs=4#33cf69c4f62445209cf7a1a545cb9569'
     },
-    { title: 'Courses',
-    pageId: '6a6f44d67e0240c69ac0adfa6c483120'
-    }, 
-
     {
-      title: 'Curriculum', 
-      pageId: '9f3e402932a344eeaafc660eeeff4711'
-    }, 
-    {
-      'title': 'FAQ', 
-      'pageId': '94cb462d8f874103ab629d9255600465'
+      title: 'Courses',
+      pageId: '6a6f44d67e0240c69ac0adfa6c483120'
     },
 
     {
-      'title': 'Schedule', 
-      'pageId': '4f5a9b8c059243c7a259bea893918a5a'
+      title: 'Curriculum',
+      pageId: '9f3e402932a344eeaafc660eeeff4711'
+    },
+    {
+      title: 'FAQ',
+      pageId: '94cb462d8f874103ab629d9255600465'
+    },
+
+    {
+      title: 'Schedule',
+      pageId: '4f5a9b8c059243c7a259bea893918a5a'
     }
   ]
 })

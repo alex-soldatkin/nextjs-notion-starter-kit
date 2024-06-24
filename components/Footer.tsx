@@ -9,6 +9,8 @@ import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
+
 
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
@@ -85,6 +87,20 @@ export const FooterImpl: React.FC = () => {
             rel='noopener noreferrer'
           >
             <FaZhihu />
+          </a>
+        )}
+
+        {/* add instagram */}
+
+        {config.instagram && (
+          <a
+            className={styles.instagram}
+            href={`https://instagram.com/${config.instagram}`}
+            title={`Instagram @${config.instagram}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaInstagram />
           </a>
         )}
 
