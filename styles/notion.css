@@ -150,6 +150,8 @@
 .notion-h2,
 .notion-h3 {
   margin-bottom: 0.25em;
+  /* default font Inter */
+  font-family: var(--secondary-font);
 }
 
 .notion-callout {
